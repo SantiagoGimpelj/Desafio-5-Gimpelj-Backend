@@ -32,6 +32,7 @@ app.use("/api/carts", cartsRouter);
 const expressServer = app.listen(PORT, () => {
   console.log(`Corriendo aplicacion en el puerto ${PORT}`);
 });
+
 const socketServer = new Server(expressServer);
 
 socketServer.on('connection', (socket) => {
