@@ -61,3 +61,21 @@ button {
 button:hover {
     background-color: #45a849;
 }
+
+#btn {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#btn a{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid black 2px;
+}
+
+#btn a:hover{
+   background-color: rgb(79, 79, 219);
+}

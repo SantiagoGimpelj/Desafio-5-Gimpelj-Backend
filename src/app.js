@@ -12,6 +12,7 @@ const app = express();
 const PORT = 8080;
 
 const p = new ProductManager();
+let socketServer 
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -33,7 +34,7 @@ const expressServer = app.listen(PORT, () => {
   console.log(`Corriendo aplicacion en el puerto ${PORT}`);
 });
 
-const socketServer = new Server(expressServer);
+socketServer = new Server(expressServer);
 
 socketServer.on('connection', (socket) => {
 
